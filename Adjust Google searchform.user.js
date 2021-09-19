@@ -3,6 +3,7 @@
 // @namespace    http://tampermonkey.net/
 // @version      0.1
 // @description  Adjust searchform size for Google Search
+// @description  Google検索で横スクロールバーが出ないように調整するスクリプト
 // @author       Sasano Yasuhiro
 // @match        https://www.google.com/search*
 // @icon         https://www.google.com/s2/favicons?domain=google.com
@@ -28,7 +29,7 @@ addGlobalStyle('div#searchform { min-width: 0px; }');
 addGlobalStyle('#fbar { min-width: 0px; }');
 //addGlobalStyle('#rhs { display: none; }');
 // adjust searchform
-addGlobalStyle('div.Q3DXx.yIbDgf { width: 100%; }');
-addGlobalStyle('#tsf { width: auto; display: flex; }');
-addGlobalStyle('div.A8SBwf { width: 100%; }');
-addGlobalStyle('div.RNNXgb { width: auto; }');
+addGlobalStyle('div.Q3DXx.yIbDgf { width: 100%; }'); // ロゴ、検索欄、設定などのアイコン
+addGlobalStyle('#tsf { width: auto; display: flex; }'); // ロゴ、検索欄のフォーム
+addGlobalStyle('div.A8SBwf { width: 100%; }'); // ロゴ、検索欄
+addGlobalStyle('div.RNNXgb { width: auto; }'); // 検索欄
