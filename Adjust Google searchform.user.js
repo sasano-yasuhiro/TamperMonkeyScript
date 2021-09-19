@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         Adjust searchform Google
+// @name         Adjust Google searchform
 // @namespace    http://tampermonkey.net/
 // @version      0.1
 // @description  Adjust searchform size for Google Search
